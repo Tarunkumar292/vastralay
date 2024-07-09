@@ -1,109 +1,111 @@
 /* Google Fonts Import*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-body {
+* {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.padding-every-cont {
+    padding: 30px 100px;
 }
 
 /* css for header*/
+
 header {
-    width: 1440px;
-    height: 130px;
-    padding: 40px 100px;
-    border-bottom: 0.5px solid transparent;
-    opacity: 1;
-    margin: auto;
+    border-bottom: 1px solid #0000004d;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+    gap: 5px;
     align-items: center;
 }
 
 /* Logo Image */
 header nav img {
-    width: 178.09px;
-    height: 50px;
     gap: 0px;
     opacity: 1;
 }
 
 /* Search bar */
-header nav input {
-    width: 763px;
-    height: 48px;
+
+header nav .input {
+    width: 60%;
     padding: 12px 16px;
     gap: 12px;
-    border-radius: 62px;
-    border: none;
-    background-color: #F0F0F0;
-    opacity: 1;
+    border-radius: 40px;
+    background: #f0f0f0;
 }
 
-/* Contact us */
-nav a {
-    justify-content: center;
-    text-decoration: none;
-    color: black;
-    width: 134px;
-    height: 29px;
-    gap: 0px;
-    opacity: 1;
-    font-family: 'Montserrat', sans-serif;
+header nav .input input {
+    border: none;
+    outline: none;
+    background-color: #f0f0f0;
+}
+
+header nav a {
+    font-family: Montserrat;
     font-size: 24px;
     font-weight: 500;
-    line-height: 29.26px;
-    text-align: center;
-    display: flex;
-    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 1010px) {
+    header nav .input {
+        width: 40%;
+    }
+}
+
+@media (max-width: 824px) {
+    .padding-every-cont {
+        padding: 20px 10px;
+    }
+
+    header nav .input {
+        width: 50%;
+    }
+}
+
+@media (max-width: 700px) {
+    header nav a {
+        display: none;
+    }
+
+    header nav .input {
+        display: none;
+    }
+
+    header nav img {
+        margin: auto;
+    }
 }
 
 .background {
-    position: relative;
-    width: 1440px;
-    height: 663px;
-    top: 28px;
+    width: 100%;
     gap: 0px;
     opacity: 0px;
-
+    background-color: #f2f0f1;
 }
 
 /* background image main class */
-.content img {
+.container img {
     width: 100%;
-    height: 663px;
-    top: 128px;
-    gap: 0px;
-    opacity: 0px;
-    /* Set opacity to 1 to make it visible */
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-.content {
-    position: relative;
-    top: 50px;
-    left: 100px;
 }
 
 /* Content in main class */
 .content #p1 {
-    width: 577px;
-    height: 173px;
     gap: 0px;
     opacity: 1;
     font-family: Montserrat;
     font-size: 64px;
     font-weight: 900;
     line-height: 64px;
-    text-align: left;
     color: #000000;
 }
 
@@ -112,9 +114,6 @@ nav a {
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
-    text-align: left;
-    width: 545px;
-    height: 81px;
     gap: 0px;
     opacity: 1;
     padding-top: 20px;
@@ -126,17 +125,13 @@ nav a {
     font-size: 16px;
     font-weight: 500;
     line-height: 21.6px;
-    text-align: center;
-    color: #FFFFFF;
-    width: 210px;
-    height: 52px;
+    color: #ffffff;
     padding: 16px 50px;
     gap: 12px;
     border: none;
     border-radius: 62px;
     opacity: 1;
     background-color: #000000;
-    margin-top: 60px;
 }
 
 .about {
@@ -144,21 +139,17 @@ nav a {
     align-items: center;
     margin: 20px 0;
     /* Adjust the top and bottom margin as needed */
-    width: 596px;
-    /* Corrected width */
-    height: 74px;
-    /* Corrected height */
     gap: 32px;
     opacity: 1;
     /* Set opacity to 1 to make it visible */
 }
 
 /* about company review */
-.about .review {
+.about .overview {
     text-align: center;
 }
 
-.review p:first-child {
+.overview p:first-child {
     margin: 0;
     font-family: Satoshi;
     font-size: 40px;
@@ -168,7 +159,7 @@ nav a {
     color: #000000;
 }
 
-.review p:last-child {
+.overview p:last-child {
     margin: 0;
     color: #00000099;
     font-family: Satoshi;
@@ -178,43 +169,30 @@ nav a {
     text-align: left;
 }
 
-.star {
-    position: absolute;
-    color: #000000;
-    width: 104px;
-    height: 99.75px;
-    top: 187.3px;
-    left: 1310px;
-    gap: 0px;
-    opacity: 1;
-    /* Set opacity to 1 to make it visible */
-}
-
-.star2 {
-    position: absolute;
-    color: #000000;
-    top: 365px;
-    left: 780px;
-    gap: 0px;
-    opacity: 1;
-    /* Set opacity to 1 to make it visible */
-}
-
 /* Container Styles */
 .container1 {
-    width: 1239px;
-    height: 828px;
+    margin: 50px;
     padding: 30px 64px;
     border-radius: 20px 20px 20px 20px;
-    position: absolute;
-    top: 841px;
-    left: 100.5px;
     opacity: 1;
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
+}
+
+.container1 .button {
+    width: fit-content;
+    padding: 10px 50px 10px 50px;
+    gap: 12px;
+    text-align: center;
+    margin-left: 600px;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    color: #000000;
+    border: 1px solid #0000001a;
+    border-radius: 62px;
 }
 
 /* Header Styles */
-.header {
+h2 {
     margin-bottom: 20px;
     font-family: Montserrat;
     font-size: 48px;
@@ -225,130 +203,135 @@ nav a {
 }
 
 /* Row Styles */
-.row {
+.a {
     display: grid;
     grid-template-columns: auto auto;
     margin-bottom: 20px;
+    column-gap: 10px;
 }
 
 /* Image Styles */
 .image {
     border-radius: 20px 20px 20px 20px;
     opacity: 1;
+    width: 100%;
+    height: 289px;
 }
 
 /* for set text in image */
 .image-container {
     position: relative;
-    width: fit-content;
+    width: 100%;
 }
 
 /* text in image */
 .image-text {
     position: absolute;
-    top: 10%;
-    left: 20%;
-    transform: translate(-50%, -50%);
+    top: 5px;
+    left: 10px;
     color: #000000;
     font-family: Satoshi;
     font-size: 36px;
     font-weight: 700;
     line-height: 48.6px;
     text-align: left;
-
 }
 
 /* Specific Image Classes */
-.casual-image {
-    width: 407px;
-    height: 289px;
-    top: 89px;
-    gap: 0px;
+.container2 {
+    margin: 30px;
+    opacity: 1;
 }
 
-.formal-image {
-    width: 684px;
-    height: 289px;
-    top: 89px;
-    left: 427px;
-    gap: 0px;
+.container2 img {
+    border: none;
+    border-radius: 20px 20px 20px 20px;
 }
 
-.party-image {
-    width: 684px;
-    height: 289px;
-    top: 398px;
-    gap: 0px;
+.container2 .col-3 {
+    margin-bottom: 2px;
 }
 
-.gym-image {
-    width: 407px;
-    height: 289px;
-    top: 398px;
-    left: 704px;
-    gap: 0px;
-
+.product-details p:first-child {
+    font-family: Satoshi;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
 }
 
-@media (max-width: 480px) {
+.product-details p:last-child {
+    font-family: Satoshi;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    text-align: left;
+    color: #000000;
+}
 
-    /* Adjustments for mobile */
-    header {
-        padding: 10px;
-        width: 100%;
-        /* Adjusted to be responsive */
-        height: 50px;
-        gap: 0px;
-        opacity: 1;
-        /* Corrected opacity value */
-    }
+.product-details a {
+    border: none;
+    padding: 10px 90px 10px 90px;
+    gap: 12px;
+    border-radius: 62px 62px 62px 62px;
+    opacity: 0px;
+    background-color: #000000;
+}
 
-    header nav img {
-        width: 120px;
-        text-align: center;
-    }
+.product-details img {
+    width: fit-content;
+    gap: 5.31px;
+    opacity: 0px;
+}
 
-    header nav input {
-        display: none;
-    }
+.container2 .button {
+    width: fit-content;
+    margin-top: 10px;
+    padding: 10px 50px 10px 50px;
+    gap: 12px;
+    text-align: center;
+    margin-left: 600px;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    color: #000000;
+    border: 1px solid #0000001a;
+    border-radius: 62px;
+}
 
-    header nav a {
-        display: none;
-    }
+.container3 {
+    margin: 30px;
+}
 
-    .background {
-        position: relative;
-        width: 100%;
-        /* Adjusted to be responsive */
-        height: auto;
-        /* Allow height to adjust */
-        top: 52px;
-        gap: 40px;
-        opacity: 1;
-        /* Corrected opacity value */
-    }
+.container3 img {
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+}
 
-    .background img {
-        width: 400px;
-        height: 375.53px;
-        top: 450px;
-        gap: 0px;
-        opacity: 0px;
-        z-index: -1;
-    }
+.container3 .col-3 {
+    margin-bottom: 2px;
+}
 
-    .content {
-        left: 10px;
-        top: 0;
-    }
+.container3 .button {
+    width: fit-content;
+    margin-top: 10px;
+    padding: 10px 50px 10px 50px;
+    gap: 12px;
+    text-align: center;
+    margin-left: 600px;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    color: #000000;
+    border: 1px solid #0000001a;
+    border-radius: 62px;
+}
+
+
+@media (max-width: 500px) {
 
     .content #p1 {
         display: block;
         font-family: Montserrat, sans-serif;
         /* Added fallback font */
-        width: 300px;
-        height: 100px;
-        top: 20px;
         font-size: 32px;
         font-weight: 900;
         line-height: 44px;
@@ -357,8 +340,6 @@ nav a {
 
     .content #p2 {
         display: block;
-        width: 380px;
-        height: 50px;
         font-family: Satoshi, sans-serif;
         /* Added fallback font */
         font-size: 18px;
@@ -373,14 +354,12 @@ nav a {
     }
 
     .about {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        margin-top: 20px;
-        left: 0;
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    .about p:first-child {
+
+    .review p:first-child {
         font-family: Satoshi, sans-serif;
         /* Added fallback font */
         font-size: 30px;
@@ -389,7 +368,7 @@ nav a {
         text-align: left;
     }
 
-    .about p:last-child {
+    .review p:last-child {
         font-family: Satoshi, sans-serif;
         /* Added fallback font */
         font-size: 14px;
@@ -398,8 +377,109 @@ nav a {
         text-align: left;
     }
 
+    .container1 {
+        display: none;
+    }
 
-    .container {
+    .container2 {
+        display: none;
+    }
+
+    .container3 {
         display: none;
     }
 }
+
+.customers {
+    padding: 28px 32px 28px 32px;
+    gap: 342px;
+    border-radius: 20px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+}
+
+.customers p:first-child {
+    font-family: Satoshi;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+}
+
+.customers p+p {
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+
+}
+
+.customers img {
+    width: Hug (138.84px)px;
+    height: Hug (22.58px)px;
+    gap: 6.49px;
+    opacity: 0px;
+
+}
+
+/* ----------------------------------------footer  */
+
+footer {
+    background: #f0f0f0;
+    height: 181px;
+}
+
+footer .top-footer {
+    font-family: "Abril Fatface", serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #0000004d;
+}
+
+footer .top-footer .links i {
+    border: 1px solid #00000033;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+footer .bottom-footer {
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+footer h3 {
+    font-family: Abril Fatface;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 43.17px;
+    text-align: left;
+}
+
+.bottom-footer p {
+    font-family: Satoshi;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.9px;
+}
+
+/* footer media query  */
+@media (max-width: 500px) {
+    footer .top-footer .links i {
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 50%;
+        background-color: white;
+    }
+
+    footer h2 {
+        font-size: 20px;
+    }
+}
+
+/* end  */
+
+/* footer end  */
