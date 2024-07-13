@@ -86,7 +86,7 @@ header nav a {
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: #000000;
-    z-index: -1;
+
 }
 
 h2 {
@@ -145,6 +145,13 @@ textarea {
     padding: 0;
     border-top-left-radius: 100px;
     overflow: hidden;
+}
+@media (max-width:988px) {
+    .container .bg1{
+        border-top-left-radius: 0px;
+        overflow: visible;
+    }
+    
 }
 
 .img-fluid {

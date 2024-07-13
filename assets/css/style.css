@@ -260,13 +260,39 @@ h2 {
     text-align: left;
 }
 
-.product-details p:last-child {
+.product-details .price {
     font-family: Satoshi;
     font-size: 24px;
     font-weight: 700;
     line-height: 32.4px;
     text-align: left;
-    color: #000000;
+}
+
+.product-details .discount {
+    margin-left: 10px ;
+    padding: 6px 14px 6px 14px;
+    gap: 12px;
+    border-radius: 62px 62px 62px 62px;
+    opacity: 0px;
+    font-family: Satoshi;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16.2px;
+    text-align: left;
+    background-color:#FF33331A;
+    color:#FF3333;
+
+}
+
+.product-details .off {
+    font-family: Satoshi;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    text-align: left;
+    text-decoration:line-through;
+    color:#00000066;
+    
 }
 
 .product-details a {
@@ -389,7 +415,9 @@ h2 {
         display: none;
     }
 }
-
+.container4{
+    position: relative;
+}
 .customers {
     padding: 28px 32px 28px 32px;
     gap: 342px;
@@ -413,17 +441,32 @@ h2 {
     text-align: left;
 
 }
-
-.customers img {
-    width: Hug (138.84px)px;
-    height: Hug (22.58px)px;
+.container4 .customers img {
+    width: fit-content;
     gap: 6.49px;
     opacity: 0px;
 
 }
-.container4 h2{
+.container4 h2 {
     text-align: left;
     margin-left: 10px;
+}
+.owl-theme .owl-dots{
+    display: none;
+}
+.owl-theme .owl-nav{
+    position: absolute;
+    top: -60px;
+    right: 50px;
+}
+.owl-carousel .owl-nav button{
+    padding: 10px;
+}
+.owl-carousel .owl-nav button .owl-next{
+    background-color:#F0F0F0;
+}
+.owl-carousel .owl-nav button .owl-prev{
+    background-color:#F0F0F0;
 }
 
 /* ----------------------------------------footer  */

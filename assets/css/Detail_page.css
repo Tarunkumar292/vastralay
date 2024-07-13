@@ -14,8 +14,7 @@ main .main-section .left-main {
   border-radius: 20px;
 }
 
-main .main-section .left-main .main-img {
-  background-image: url("../Detail_page_img/T-shirt-main.png");
+main .main-section .left-main #main-img {
   background-size: cover;
   background-position: center;
   width: 30vw;
@@ -40,7 +39,6 @@ main .main-section .left-main .side-images .style {
 
 main .main-section .left-main .side-images div:nth-child(1) {
   background-image: url("../Detail_page_img/T-shirt-main.png");
-  border: 1px solid #000000;
 }
 
 main .main-section .left-main .side-images div:nth-child(2) {
@@ -70,7 +68,7 @@ main .main-section .right-main .rating {
   font-size: 23px;
 }
 main .main-section .right-main .rating img {
-  width: 100px;
+  width: 150px;
 }
 
 main .main-section .right-main .price {
@@ -174,8 +172,9 @@ main .main-section .right-main a {
   main .main-section {
     flex-direction: column;
   }
-  main .main-section .left-main .main-img {
+  main .main-section .left-main #main-img {
     width: 80%;
+    /* background-position: top; */
   }
 
   /* .right  */
@@ -207,7 +206,7 @@ main .main-section .right-main a {
 @media (max-width: 824px) {
   /* left  */
 
-  main .main-section .left-main .main-img {
+  main .main-section .left-main #main-img {
     width: 100%;
     height: 60vh;
   }
@@ -221,7 +220,7 @@ main .main-section .right-main a {
 
   main .main-section .left-main .side-images {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   /* .right  */
@@ -242,7 +241,7 @@ main .main-section .right-main a {
   }
 }
 @media (max-width: 500px) {
-  main .main-section .left-main .main-img {
+  main .main-section .left-main #main-img {
     width: 100%;
     height: 50vh;
   }
@@ -321,4 +320,24 @@ main .main-section .right-main a {
   bottom: -0.5px;
   left: 0;
   background-color: black;
+}
+
+/* ---------------------------------------sproduct list------------------- */
+
+.Our-Product > h2 {
+  font-weight: 900;
+  font-size: 3vw;
+  width: fit-content;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.owl-carousel .item .product-details img {
+  width: 40%;
+}
+
+.owl-carousel .item .product-details a {
+  font-size: 20px;
+  width: fit-content;
+  padding: 10px;
 }

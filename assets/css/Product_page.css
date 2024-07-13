@@ -1,0 +1,10 @@
+section h4:last-child {
+  color: black;
+  font-weight: 600;
+}
+.products-items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}

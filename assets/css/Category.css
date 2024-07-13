@@ -1,3 +1,4 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi");
 * {
   margin: 0;
   padding: 0;
@@ -233,7 +234,7 @@ footer .bottom-footer {
     background-color: white;
   }
   footer h3 {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 /* end  */
